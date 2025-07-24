@@ -1,0 +1,29 @@
+{
+  "fileStructure": {
+    "components": "All reusable React components should be placed in src/components/.",
+    "pages": "All route files should be in src/app/ as per Next.js app directory structure.",
+    "assets": "All static assets (images, icons) should be placed in public/ and referenced with absolute paths starting with '/'."
+  },
+  "componentNaming": {
+    "pascalCase": "All React component files and exported components must use PascalCase naming (e.g., Header.tsx, Footer.tsx).",
+    "defaultExport": "Each component file should have a single default export matching the filename."
+  },
+  "styling": {
+    "materialize": "Use MaterializeCSS classes for layout and components where possible. Use inline styles or custom CSS modules only for pixel-perfect adjustments.",
+    "globals": "Global styles should be placed in src/app/globals.css. Avoid global overrides unless necessary.",
+    "customCss": "If custom CSS is needed, use CSS modules named [Component].module.css in the same directory as the component."
+  },
+  "assets": {
+    "naming": "Asset filenames should be lowercase and use hyphens (e.g., search-icon.png, logo-placeholder.png).",
+    "format": "Prefer SVG for icons when possible, PNG for images."
+  },
+  "imports": {
+    "absolute": "Use absolute imports with the @ alias for src/ (e.g., import Header from '@/components/Header').",
+    "public": "Reference public assets with a leading slash (e.g., '/logo-placeholder.png')."
+  },
+  "misc": {
+    "typescript": "All files should use TypeScript (.tsx/.ts).",
+    "eslint": "Follow the project's ESLint rules for code quality and consistency.",
+    "readme": "Document any major architectural or design decisions in README.md."
+  }
+} 
